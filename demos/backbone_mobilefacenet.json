@@ -1,0 +1,11 @@
+{
+    "model_paths": "./tmp/deepglint_ir/backbone_mobilefacenet.pth",
+    "framework": "pytorch",
+    "format": "pth",
+    "has_data": false,
+    "inference_params": {
+        "threshold": 1.435
+    },
+    "optimized": false,
+    "optimizer_info": {}
+}

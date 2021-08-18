@@ -1,0 +1,1 @@
+{"model_paths": ["retinaface_resnet-symbol.json", "retinaface_resnet-0000.params"], "framework": "mxnet", "format": "checkpoint", "has_data": false, "inference_params": {}, "optimized": false, "optimizer_info": {}}
