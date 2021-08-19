@@ -704,7 +704,7 @@ class RetinaFaceLearner(Learner):
         if verbose:
             print("Saved model metadata.")
 
-    def load(self, path, verbose=True):
+    def load(self, path, verbose=False):
         """
         Loads the model from inside the path provided, based on the metadata .json file included.
 
@@ -727,8 +727,6 @@ class RetinaFaceLearner(Learner):
         self.detector = RetinaFace(prefix=model_path, ctx_id=self.gpu_id, network=self.net)
         self._model = self.detector.model
 
-        if verbose:
-            print("Loaded mxnet model.")
 
     def download(self, path=None, mode="pretrained", verbose=True,
                  url=OPENDR_SERVER_URL + "perception/object_detection_2d/retinaface/"):

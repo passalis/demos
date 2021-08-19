@@ -10,3 +10,4 @@ fi
 source venv/bin/activate
 export MXNET_CUDNN_LIB_CHECKING=0
 export MXNET_CUDNN_AUTOTUNE_DEFAULT=0
+export MXNET_CUDNN_LIB_CHECKING=0
