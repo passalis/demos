@@ -652,6 +652,9 @@ class FaceRecognitionLearner(Learner):
         :param verbose: Whether to print messages in the console, defaults to False
         :type verbose: bool, optional
         """
+        if mode == "pretrained":
+            path += "/opendr_face_backbone"
+
         valid_modes = ['pretrained', 'test_data']
         if mode not in valid_modes:
             raise UserWarning("mode parameter not valid:", mode, ", should be one of:", valid_modes)

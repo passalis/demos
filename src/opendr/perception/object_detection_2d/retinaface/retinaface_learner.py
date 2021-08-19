@@ -610,7 +610,7 @@ class RetinaFaceLearner(Learner):
             idx += 1
         return fixed_param_names
 
-    def infer(self, img, threshold=0.8, nms_threshold=0.4, scales=[1024, 1980], mask_thresh=0.8):
+    def infer(self, img, threshold=0.8, nms_threshold=0.6, scales=[1024, 1980], mask_thresh=0.8):
         """
         Performs inference on a single image and returns the resulting bounding boxes.
         :param img: image to perform inference on

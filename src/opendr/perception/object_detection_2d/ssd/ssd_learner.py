@@ -539,7 +539,7 @@ class SingleShotDetectorLearner(Learner):
         eval_dict = {k.lower(): v for k, v in zip(map_name, mean_ap)}
         return eval_dict
 
-    def infer(self, img, threshold=0.2, keep_size=False):
+    def infer(self, img, threshold=0.6, keep_size=False):
         """
         Performs inference on a single image and returns the resulting bounding boxes.
         :param img: image to perform inference on
