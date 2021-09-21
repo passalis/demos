@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
+
 ifeq ($(OPENDR_HOME),)
 ifneq ($(findstring MINGW,$(shell uname)),) # under MINGW, we need to set OPENDR_HOME using the native Windows format
 export OPENDR_HOME:=`pwd -W | tr -s / '\\'`
